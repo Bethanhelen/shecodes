@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sci-fi Movies</title>
+    <style>
+        body {
+            font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
+            background: linear-gradient(63deg, rgb(242, 168, 168)2.9%, rgb(94, 46, 165)102.1%);
+            background-repeat: no-repeat;
+        }
+        
+        .container {
+            width: 80%;
+            display: block;
+            margin: 30px auto;
+        }
+        
+        h1,
+        h2 {
+            font-weight: 900;
+            font-size: 34px;
+            line-height: 54px;
+            margin: 0;
+        }
+        
+        h1 {
+            color: #fff;
+            text-align: center;
+            border: 1px solid white;
+        }
+        
+        h2 {
+            text-align: center;
+            color: #8ef6e4;
+            padding: 20px 0 24px;
+            font-size: 26px;
+        }
+        
+        img {
+            max-width: 500px;
+            display: block;
+            margin: 0 auto;
+            padding: 20px 0;
+            border-radius: 4px;
+        }
+        
+        p {
+            font-size: 18px;
+            line-height: 28px;
+            font-family: "Poppins", sans-serif;
+            color: #fff;
+            margin-bottom: 30px;
+        }
+        
+        span.movie {
+            font-weight: bolder;
+            color: #8ef6e4;
+        }
+        
+        .link {
+            text-decoration: none;
+            color: #27296d;
+        }
+        
+        .link:hover {
+            text-decoration: underline;
+            color: #8ef6e4;
+            cursor: pointer;
+        }
+        
+        button {
+            border-radius: 25px;
+            margin: 20px auto;
+            display: block;
+            background-color: #fff;
+            border: 1px solid #8ef6e4;
+            color: purple;
+            font-size: 16px;
+            line-height: 22px;
+            padding: 16px 24px;
+            text-decoration: none;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+            transition: all 200ms ease;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            color: purple;
+            background: #8ef6e4;
+        }
+        
+        footer {
+            text-align: center;
+            margin: 40px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1> I love Sci-fi movies
+        </h1>
+        <h2> Especially Marvel and DC comics
+        </h2>
+        <hr />
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/047/074/original/1664401838988.jpg?1664401876" alt="sci-fi movies" />
+        <hr />
+        <p><strong> Science-fiction <em>(Sci-fi)</em> </strong> is a film genre that uses speculative, fictional science-based depictions of phenomena that are not fully accepted by mainstream science, such as extraterrestrial lifeforms, spacecraft, robots,
+            cyborgs, interstellar travel or other technologies. </br>
+            Sci-fi movies came into existence since the 1900s, where movies were shown in black and white. It evolved over the years till we have the suspense filled and action packed movies present today. I loves sci-fi movies because it gives me an escape from
+            reality and also gets me thinking on what happens to an hero or villain in the movie.</p>
+        <p><span class="movie">Marvel and DC comics</span> have stood out from their contemporaries based on their story(historically inspired e.g Greek mythology), cinematography, movie effects and quality. My favourites of all time include Spiderman, Superman,
+            Wonder-woman etc.</p>
+        <a class="link" href="https://en.m.wikipedia.org/wiki/Science_fiction_film">Read more on <em>Wikipedia</em></a>
+        <br />
+        <button> Watch Now </button>
+        <footer>
+            This is built by <a class="link " href="https://elizabetholusipe.netlify.app">Elizabeth Olusipe</a>
+        </footer>
+    </div>
+    <script>
+        function sciFi() {
+            let name = prompt("What is your name?");
+            let movie = prompt("What movie genre do you enjoy");
+            movie = movie.toLowerCase().trim();
+            if (movie === "sci-fi") {
+                alert(`Hi ${name} Welcome to the club!`);
+            } else {
+                alert(`Sorry, ${name} You are missing out.`);
+            }
+        }
+
+        let applyButton = document.querySelector("button")
+
+        applyButton.addEventListener("click", sciFi);
+    </script>
+</body>
+
+</html>
