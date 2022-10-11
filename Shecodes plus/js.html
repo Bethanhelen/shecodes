@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js basics</title>
+</head>
+
+<body>
+    <script>
+        let name = "SheCodes"; // "SheCodes"
+
+        let city = "Montreal";
+        city = city.replace("e", "é"); // "Montréal"
+
+        let city = " Montreal  "
+        city.trim() // "Montreal"
+
+        let city = "Montreal";
+        city = city.toLowerCase(); // "montreal"
+
+        let city = "Montreal";
+        city = city.toUpperCase(); // "MONTREAL"
+
+        // string concatenation
+        let firstName = "Julie";
+        let lastName = "Johnson";
+        let fullName = firstName + " " + lastName; // "Julie Johnson"
+
+        //or
+        let fullName = `${firstName} ${lastName}`;
+
+
+        // template literals
+        let city = "Denver";
+        let sentence = `Kate is from ${city}`; // Kate is from Denver
+    </script>
+</body>
+
+</html>
